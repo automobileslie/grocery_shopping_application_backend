@@ -6,6 +6,12 @@ class ReceiptsController < ApplicationController
     # logic for calculating points would be factored out to a method in a separate component in the future and called here
     if params[:receipt_id]
       receipt = Receipt.find(params[:receipt_id])
+
+      # if we find a receipt that matches the id provided, calculate the points
+      if !receipt.present?
+        return render json: {status: 404}
+      end
+
       items_purchased = receipt.items
       total = receipt.total
 

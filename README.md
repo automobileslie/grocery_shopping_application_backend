@@ -6,7 +6,7 @@ I. Shopping Cart Application
     * displays a list of items available for purchase
     * allows a user to add items to their shopping cart, 
     * generates a receipt for their purchases 
-    * and calculated their reward points 
+    * and calculates their reward points 
     
     Watch the video below for a demo.
 
@@ -16,11 +16,8 @@ II. Set Up
 
     * Install Ruby version 3.2.2: 'rvm install "ruby-3.2.2"'
     * Set the computer's default with: 'rvm --default use 3.2.2'
-
     * Install Rails version 6.0.6.1
-
     * Install sqlite3: https://www.sqlite.org/index.html
-
     * Go to the root of the application
     * Type 'ruby -v' in the terminal
     * If it is less than 3.2.2, enter 'rvm use 3.2.2'
@@ -45,9 +42,9 @@ III. Routes and Models
 
 IV. Interactivity with a Front End Application
 
-    <a href="https://github.com/automobileslie/grocery_store_application_front_endfront-end">This Front End Application</a> is built out for demo purposes. 
-    If you clone that repo and get it up and running, 
-    you can test out the user experience as it makes fetches to the backend. 
-    The frontend displays the items available. 
-    It also allows users to add an item to their cart, complete the purchase, and see their reward points. 
+<a href="https://github.com/automobileslie/grocery_store_application_front_endfront-end">This Front End Application</a>is built out for demo purposes. 
+If you clone that repo and get it up and running, 
+you can test out the user experience as it makes fetches to the backend. 
+The frontend displays the items available. 
+It also allows users to add an item to their cart, complete the purchase, and see their reward points. 
 

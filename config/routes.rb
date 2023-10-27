@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   post '/receipts/process', to: 'receipts#process'
   get '/receipts', to: 'receipts#index'
 
-  resources :purchases
-  resources :items
+  resources :items, only: [:index]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

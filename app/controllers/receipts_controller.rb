@@ -1,5 +1,4 @@
 class ReceiptsController < ApplicationController
-  before_action :set_receipt, only: %i[ show edit update destroy ]
 
   # GET /receipts or /receipts.json
   def index
@@ -8,6 +7,9 @@ class ReceiptsController < ApplicationController
   end
 
   def process(args)
+    # if a receipt_id is included in the request, that means the user is making a request to '/receipts/:receipt_id/points'
+    # to get the points earned from that receipt, so calculate those points and return them to the user here
+    # logic for calculating points would be factored out to a method in a separate component in the future and called here
     if params[:receipt_id]
       receipt = Receipt.find(params[:receipt_id])
       items_purchased = receipt.items
@@ -65,6 +67,7 @@ class ReceiptsController < ApplicationController
 
       render json: {points: point_count}
 
+    # if the params do not include a receipt_id, that means the user is completing a purchase and needs a receipt
     else
       receipt = Receipt.create!(retailer: "Target")
 
@@ -86,10 +89,4 @@ class ReceiptsController < ApplicationController
       render json: {id: receipt.id}
     end
   end
-
-  private
-    # Only allow a list of trusted parameters through.
-    def receipt_params
-      params.require(:receipt).permit(:items_purchased)
-    end
 end

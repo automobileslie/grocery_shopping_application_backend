@@ -9,7 +9,6 @@ I. Shopping Cart Application
     * and calculates their reward points 
     
     Watch the video below for a demo.
-
    <a href="https://www.loom.com/share/3f0fb37b5bb64514bccf4316d472f971?sid=f4f83d13-9627-4470-83eb-f5430a6cd417">Application Demo</a>
 
 II. Set Up 
@@ -42,7 +41,7 @@ III. Routes and Models
 
 IV. Interactivity with a Front End Application
 
-<a href="https://github.com/automobileslie/grocery_store_application_front_endfront-end">This Front End Application</a>is built out for demo purposes. 
+<a href="https://github.com/automobileslie/grocery_store_application_front_endfront-end">This Front End Application</a> is built out for demo purposes. 
 If you clone that repo and get it up and running, 
 you can test out the user experience as it makes fetches to the backend. 
 The frontend displays the items available. 

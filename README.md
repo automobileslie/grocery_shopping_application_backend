@@ -21,7 +21,7 @@ II. Set Up
     * Type 'ruby -v' in the terminal
     * If it is less than 3.2.2, enter 'rvm use 3.2.2'
     * Run rails db:migrate and rails db:seed
-    * Enter 'rails server' to start the server
+    * Enter 'rails server' to start the server and make sure it is running on http://localhost:3000
 
 III. Routes and Models
 

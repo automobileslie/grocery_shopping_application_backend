@@ -1,11 +1,5 @@
 class ReceiptsController < ApplicationController
 
-  # GET /receipts or /receipts.json
-  def index
-    @receipts = Receipt.all
-    render "receipts/index"
-  end
-
   def process(args)
     # if a receipt_id is included in the request, that means the user is making a request to '/receipts/:receipt_id/points'
     # to get the points earned from that receipt, so calculate those points and return them to the user here

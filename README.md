@@ -41,7 +41,7 @@ III. Routes and Models
 
 IV. Interactivity with a Front End Application
 
-<a href="https://github.com/automobileslie/grocery_store_application_front_endfront-end">This Front End Application</a> is built out for demo purposes. 
+<a href="https://github.com/automobileslie/grocery_store_application_front_end">This Front End Application</a> is built out for demo purposes. 
 If you clone that repo and get it up and running, 
 you can test out the user experience as it makes fetches to the backend. 
 The frontend displays the items available. 

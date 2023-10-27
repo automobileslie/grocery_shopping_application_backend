@@ -4,7 +4,7 @@ I. Shopping Cart Application
 
     This is a Shopping Application that displays a list of items available for purchase, allows a user to add items to their shopping cart, and then generates a receipt for their purchases with reward points calculated based on the transaction. Watch the video below for a demo of the app when it is used in interaction with a front-end interface.
 
-    https://www.loom.com/share/3f0fb37b5bb64514bccf4316d472f971?sid=f4f83d13-9627-4470-83eb-f5430a6cd417
+   <a href="https://www.loom.com/share/3f0fb37b5bb64514bccf4316d472f971?sid=f4f83d13-9627-4470-83eb-f5430a6cd417">Application Demo</a>
 
 II. Set Up 
 

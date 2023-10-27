@@ -71,8 +71,14 @@ class ReceiptsController < ApplicationController
     else
       receipt = Receipt.create!(retailer: "Target")
 
+      if !receipt.present? 
+        return render json: {status: 500}
+      end
+
       params["items_purchased"].each do |id|
-        Purchase.create!(item_id: id, receipt_id: receipt.id)
+        if Item.find(id).present?
+          Purchase.create!(item_id: id, receipt_id: receipt.id)
+        end
       end
 
       items_purchased = receipt.items
